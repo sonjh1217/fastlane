@@ -137,14 +137,14 @@ module Spaceship
   # Raised for localized screenshots errors from App Store Connect
   class AppStoreScreenshotError < AppStoreLocaleError
     def preferred_error_info
-      "#{@message} Check the screenshot requirements here: https://developer.apple.com/help/app-store-connect/reference/screenshot-specifications"
+     "#{@message} Check the app preview requirements here: https://developer.apple.com/help/app-store-connect/reference/app-preview-specifications"
     end
   end
 
   # Raised for localized app preview errors from App Store Connect
   class AppStoreAppPreviewError < AppStoreLocaleError
     def preferred_error_info
-      "#{@message} Check the app preview requirements here: https://developer.apple.com/help/app-store-connect/reference/app-preview-specifications"
+      "#{@message} Check the app preview requirements here: https://help.apple.com/app-store-connect/en.lproj/static.html#dev4e413fcb8"
     end
   end
 end
