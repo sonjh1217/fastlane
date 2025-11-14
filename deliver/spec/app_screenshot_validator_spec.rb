@@ -32,6 +32,8 @@ describe Deliver::AppScreenshotValidator do
       expect_no_error(app_screenshot_with(ScreenSize::IOS_65, :jpeg, 'image.jpeg'))
       expect_no_error(app_screenshot_with(ScreenSize::IOS_67, :png, 'image.png'))
       expect_no_error(app_screenshot_with(ScreenSize::IOS_67, :jpeg, 'image.jpeg'))
+      expect_no_error(app_screenshot_with(ScreenSize::IOS_IPAD_13, :png, 'image.png'))
+      expect_no_error(app_screenshot_with(ScreenSize::IOS_IPAD_13, :jpeg, 'image.jpeg'))
     end
 
     it 'should detect valid size screenshot' do
